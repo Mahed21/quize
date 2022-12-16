@@ -1,0 +1,19 @@
+.question-text {
+  background-color: #e7e9eb;
+}
+.question-text:hover {
+  background-color: #1678cd;
+  color: white;
+}
+.warning {
+  color: rgb(81, 4, 4);
+  font-size: 40px;
+}
+.correct {
+  color: #1db52a;
+  font-size: 40px;
+}
+.counter {
+  background-color: #1678cd;
+  color: white;
+}
