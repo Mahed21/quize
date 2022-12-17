@@ -6,7 +6,7 @@ import UseFirebase from "../Hook/UseFirebase";
 
 const FinalPage = () => {
   const { emailPassSignIn } = UseFirebase();
-  const [error, setError] = useState("");
+
   const {
     firstName,
     setFirstName,
@@ -18,6 +18,8 @@ const FinalPage = () => {
     setNumber,
     password,
     setpassword,
+    error,
+    setError,
   } = useContext(COUNTER_CONTEXT);
   let navigate = useNavigate();
   const back = () => {

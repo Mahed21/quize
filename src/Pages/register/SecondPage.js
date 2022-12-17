@@ -49,7 +49,7 @@ const SecondPage = () => {
                 setEmail(e.target.value);
               }}
             />
-            <p className="warning mt-1"></p>
+            <p className="warning mt-1">{error}</p>
             <br />
             <div className="flex mb-5">
               <button

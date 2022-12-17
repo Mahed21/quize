@@ -12,8 +12,8 @@ import initializeAuthentication from "../Firebase/Firebase.initial";
 
 initializeAuthentication();
 const UseFirebase = () => {
-  const { user, setUser } = useContext(COUNTER_CONTEXT);
-  const [error, setError] = useState({});
+  const { user, setUser, error, setError } = useContext(COUNTER_CONTEXT);
+
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
   //google signIn
@@ -41,7 +41,6 @@ const UseFirebase = () => {
       })
       .catch((error) => {
         setError(error.message);
-        alert(error.message);
       });
   };
 
@@ -55,7 +54,6 @@ const UseFirebase = () => {
       })
       .catch((error) => {
         setError(error.message);
-        alert(error.message);
       });
   };
 

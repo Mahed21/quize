@@ -25,6 +25,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [user, setUser] = useState({});
   const [counter, setCounter] = useState(60);
+  const [error, setError] = useState();
   const value = {
     firstName,
     setFirstName,
@@ -48,6 +49,8 @@ function App() {
     setUser,
     counter,
     setCounter,
+    error,
+    setError,
   };
   return (
     <div>

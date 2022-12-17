@@ -37,5 +37,6 @@ input:focus {
   border: none;
 }
 .warning {
-  color: red;
+  color: rgb(232, 13, 13);
+  font-size: 15px !important;
 }

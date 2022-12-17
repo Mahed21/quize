@@ -24,10 +24,10 @@ const Html = () => {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:5000/${name}?page=${page}`)
+    fetch(`https://quize.onrender.com/${name}?page=${page}`)
       .then((res) => res.json())
       .then((data) => setHtmlQuestion(data.data));
-  }, [page]);
+  }, [page, name]);
 
   return (
     <div>

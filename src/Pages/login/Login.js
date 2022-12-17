@@ -5,11 +5,16 @@ import image from "../../images/html.jpg";
 import UseFirebase from "../Hook/UseFirebase";
 
 const Login = () => {
-  const [error, setError] = useState();
   const { emailPassLogIn } = UseFirebase();
   let navigate = useNavigate();
-  const { accessToken, setAccessToken, refressToken, setRefreshToken } =
-    useContext(COUNTER_CONTEXT);
+  const {
+    accessToken,
+    setAccessToken,
+    refressToken,
+    setRefreshToken,
+    error,
+    setError,
+  } = useContext(COUNTER_CONTEXT);
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const login = () => {

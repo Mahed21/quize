@@ -11,7 +11,7 @@ const FirstPage = () => {
   const [error, setError] = useState("");
   const next = () => {
     if (!firstName) {
-      setError("Fist Name is Required");
+      setError("First Name is Required");
     } else if (!lastName) {
       setError("Last Name is Required");
     } else {
